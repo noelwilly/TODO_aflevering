@@ -1,0 +1,118 @@
+:root {
+  --gradient: linear-gradient(180deg, rgba(45, 112, 125, 0.73) 0%, #163e92 100%);
+}
+
+body {
+  background: var(--gradient);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  list-style: none;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+ul {
+  display: grid;
+  gap: 6px;
+  text-align: left;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 2rem;
+  margin: 15px auto 15px auto;
+  max-width: fit-content;
+  background: rgb(248, 233, 215);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  position: relative;
+  display: flex;
+}
+
+.inputStyle {
+  width: 100%;
+  border: 0.12rem solid #d2d2d2;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  font-size: 1rem;
+  background-color: floralwhite;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.6), inset -1px -1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  background-color: cadetblue;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.btn:hover {
+  background-color: rgb(97, 97, 255);
+}
+
+.btn:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.deleteBtn {
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+  background-color: rgb(231, 77, 77);
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.deleteBtn:hover {
+  background-color: rgb(97, 97, 255);
+}
+
+.deleteBtn:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 3rem 0 3rem;
+}
+
+/* VÆRTIKARLE LINJE */
+.vl {
+  border-left: 2px solid black;
+  height: 500px;
+  margin: 15px auto 15px auto;
+}

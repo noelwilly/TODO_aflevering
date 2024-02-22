@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="header">
+            <h1>TO-DO LIST</h1>
+            <label class="input">
+                <input type="text" class="inputStyle" id="taskInput" placeholder="Add new task">
+            </label>
+            <button id="addBtn" type="button" class="btn">Add</button>
+        </section>
+        <section>
+            <article>
+                <h2>OPEN TASKS: <span id="openCounter"></span></h2>
+                <ul id="taskList"></ul>
+            </article>
+            <div class="vl"></div>
+            <article>
+                <h2>COMPLETED: <span id="compCounter"></span></h2>
+                <ul id="taskComplete"></ul>
+            </article>
+        </section>
+
+        <template id="taskTemplate">
+            <li class="task">
+                <span></span>
+                <input id="checkbox" type="checkbox" class="task-completed">
+                <label for="checkbox" class="checkbox-label"></label>
+                <button type="button" class="deleteBtn">Delete</button>
+            </li>
+        </template>
+        <script type="module" src="script.js"></script>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
